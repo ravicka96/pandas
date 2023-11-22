@@ -1,21 +1,21 @@
 body {
     margin: 0;
     padding: 15px;
-    background-image: url("assets/habitat.jpg");
-    background-position: center bottom;
+    background-image: url("assets/bg.jpg");
     background-size: cover;
+    background-repeat: repeat-x;
 }
 
 nav {
     text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     margin: 15px 0;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 15px;
     font-family: Verdana, sans-serif;
 }
@@ -27,14 +27,10 @@ section {
     align-items: center;
 }
 
-footer #footer {
-    text-align: center !important;
-}
-
 h1,
 h2 {
     font-family: Verdana, sans-serif;
-    color: black;
+    color: white;
     text-align: center; /* Center align header and section headings */
 }
 
@@ -45,7 +41,7 @@ p {
     max-width: 100%;
     text-align: justify;
     text-justify: inter-word;
-    color: black;
+    color: white;
 }
 
 .content-box {
@@ -54,7 +50,7 @@ p {
 }
 
 .section-box {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 2em;
     max-width: 900px;
     margin: 15px auto;
@@ -64,7 +60,7 @@ p {
 .header-box {
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 1em 15px;
 }
 
@@ -73,7 +69,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 1em 15px;
     border-radius: 5px;
     margin: 15px 0;
@@ -99,6 +95,11 @@ p {
     display: block;
 }
 
+.current-date-time {
+    margin-left : 15px;
+    color : white;
+}
+
 #language-selector {
     position: relative;
     cursor: pointer;
@@ -111,18 +112,19 @@ p {
 }
 #current-language {
     margin-right: 10px; /* Adjust the margin as needed */
+    color : white;
 }
 #language-list {
     display: none;
     position: absolute;
-    top: 30px;
     right: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    list-style: none;
-    margin: 0;
+    left: 15;
+    bottom : 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    z-index: 1;
+    max-height: 200px; /* Set a maximum height for the dropdown menu */
+    overflow-y: auto; /* Add scrollbar if content exceeds max height */
 }
 #language-list li {
     cursor: pointer;
@@ -130,4 +132,16 @@ p {
 #language-list li {
     cursor: pointer;
     margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.dropdown-item {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: rgba(500, 450, 250, 0.9);
+      border-bottom: 1px solid #ccc; /* Add a border between options */
+}
+
+.dropdown-item:last-child {
+      border-bottom: none; /* Remove border for the last option */
 }

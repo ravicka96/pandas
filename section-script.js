@@ -18,5 +18,5 @@ function showSection(sectionId) {
 
     // Highlight the active nav link
     var newSelectedNavLink = document.querySelector('nav a[href="#' + sectionId + '"]');
-    newSelectedNavLink.style = "background-image: linear-gradient( 135deg, #D0EDA6 10%, #99DB39 100%); font-weight: 900";
+    newSelectedNavLink.style = "background-color: #000000; background-image: linear-gradient(120deg, #FFFFFF 0%, #434343 74%); color:black; font-style: oblique;";
 }
