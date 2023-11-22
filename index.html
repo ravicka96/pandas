@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<link rel="stylesheet" href="styles.css" type='text/css'>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discover the Enchanting World of Pandas</title>
+    </head>
+    <body>
+		<div class="region-box">
+			<div class="left-section">
+				<span id="currentDateTime"></span>
+			</div>
+			<div class="right-section">
+				<div id="language-selector">
+					<span id="current-language">English</span>
+					<img src="assets/globe.png" alt="Globe Icon" width="30" height="30">    
+					<ul id="language-list"></ul>
+					<!-- Add languages dynamically using JavaScript -->					
+				</div>
+			</div>
+		</div>
+        <header id="heading" class="header-box">
+			<h1>Discover the Enchanting World of Pandas</h1>
+        </header>		
+
+        <nav id="pageNav">
+            <a href="#introduction" id="nav1" onclick="showSection('introduction')">Introduction</a>
+            <a href="#appearance" id="nav2" onclick="showSection('appearance')">Appearance</a>
+            <a href="#habitat" id="nav3" onclick="showSection('habitat')">Habitat</a>
+            <a href="#diet" id="nav4" onclick="showSection('diet')">Diet</a>
+            <a href="#solitary-nature" id="nav5" onclick="showSection('solitary-nature')">Solitary Nature</a>
+            <a href="#survival-threats" id="nav6" onclick="showSection('survival-threats')">Survival Threats</a>
+        </nav>
+
+        <section id="introduction" class="section-box">
+            <div class="content-box">
+                <h2>Introduction</h2>
+                <p>
+                    Pandas, with their endearing appearance and gentle demeanor, hold a special place in the hearts of people worldwide. These charismatic creatures are beloved symbols of conservation efforts and ambassadors for wildlife
+                    protection. Let's delve into the fascinating world of pandas, exploring their habitat, behavior, and the crucial conservation initiatives working towards their preservation.
+                </p>
+            </div>
+        </section>
+
+        <section id="appearance" class="section-box">
+            <div class="content-box">
+                <h2>Appearance</h2>
+                <p>
+                    Giant pandas, known scientifically as Ailuropoda melanoleuca, are instantly recognizable by their distinctive black-and-white fur. With their rotund bodies and captivating round faces, pandas exude a charm that
+                    captivates people of all ages.
+                </p>
+            </div>
+        </section>
+
+        <section id="habitat" class="section-box">
+            <div class="content-box">
+                <h2>Habitat</h2>
+                <p>
+                    Pandas are native to the mountainous regions of central China, particularly in Sichuan, Shaanxi, and Gansu provinces. Their habitat consists of dense bamboo forests, where they find both sustenance and shelter. These
+                    forests provide the perfect backdrop for the panda's solitary and peaceful lifestyle.
+                </p>
+            </div>
+        </section>
+
+        <section id="diet" class="section-box">
+            <div class="content-box">
+                <h2>Diet</h2>
+                <p>
+                    Primarily herbivores, pandas are bamboo aficionados. Their diet consists almost entirely of various bamboo species, supplemented occasionally with small mammals, birds, or carrion. Remarkably, pandas can consume a vast
+                    amount of bamboo daily, showcasing their adaptability in acquiring the necessary nutrients.
+                </p>
+            </div>
+        </section>
+
+        <section id="solitary-nature" class="section-box">
+            <div class="content-box">
+                <h2>Solitary Nature</h2>
+                <p>
+                    Pandas are known for their solitary nature, with adults typically avoiding each other except during the breeding season. Despite their independent lifestyle, pandas communicate through vocalizations, scent marking, and
+                    occasional interactions, offering a glimpse into their social dynamics.
+                </p>
+            </div>
+        </section>
+
+        <section id="survival-threats" class="section-box">
+            <div class="content-box">
+                <h2>Survival Threats</h2>
+                <p>
+                    While pandas have captivated the world, they face numerous threats to their survival. Habitat loss due to human encroachment, climate change affecting bamboo availability, and poaching have all contributed to the
+                    challenges these iconic animals endure.
+                </p>
+            </div>
+        </section>
+
+        <footer class="header-box">
+            <p id="footer">&copy; 2023 Multilingual Panda World. All rights reserved.</p>
+        </footer>
+
+        <script src="section-script.js"></script>
+		<script src="script.js"></script>
+		<script src="region-script.js"></script>
+    </body>
+</html>

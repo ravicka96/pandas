@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 15px;
+    background-image: url("assets/habitat.jpg");
+    background-position: center bottom;
+    background-size: cover;
+}
+
+nav {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-family: Verdana, sans-serif;
+}
+
+section {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #footer {
+    text-align: center !important;
+}
+
+h1,
+h2 {
+    font-family: Verdana, sans-serif;
+    color: black;
+    text-align: center; /* Center align header and section headings */
+}
+
+p {
+    line-height: 1.6;
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    max-width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+}
+
+.content-box {
+    flex: 1;
+    margin: 0 2em;
+}
+
+.section-box {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2em;
+    max-width: 900px;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+.header-box {
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1em 15px;
+}
+
+.region-box {
+    font-family: Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1em 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide all sections by default */
+.section-box {
+    display: none;
+}
+
+/* Show only the active section */
+.active-section {
+    display: block;
+}
+
+#language-selector {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#language-selector img {
+    margin-right: 15px; /* Adjust the margin as needed */
+}
+#current-language {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+#language-list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+#language-list li {
+    cursor: pointer;
+}
+#language-list li {
+    cursor: pointer;
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
