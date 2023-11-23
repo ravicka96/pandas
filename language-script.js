@@ -2,9 +2,9 @@ const languages = [
     { code: "en", name: "English" },
     { code: "es", name: "Español" },
     { code: "fr", name: "Français" },
-	{ code: "de", name: "German" },
+	{ code: "de", name: "Deutsch" },
 	{ code: "ja", name: "Japanese" },
-	{ code: "ko", name: "Korean" },
+	{ code: "ko", name: "한국어" },
     // Add more languages as needed
 ];
 let currentLanguage = "en";
