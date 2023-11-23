@@ -10,12 +10,12 @@ function applyTranslations(translation) {
   document.getElementById('survival-threats').querySelector('h2').textContent = translation.survival_threats;
 
   // Apply translations to navigation elements as needed
-  document.getElementById('nav1').textContent = translation.introduction;
-  document.getElementById('nav2').textContent = translation.appearance;
-  document.getElementById('nav3').textContent = translation.habitat;
-  document.getElementById('nav4').textContent = translation.diet;
-  document.getElementById('nav5').textContent = translation.solitary_nature;
-  document.getElementById('nav6').textContent = translation.survival_threats;
+  document.getElementById('introduction_p').textContent = translation.introduction;
+  document.getElementById('appearace_p').textContent = translation.appearance;
+  document.getElementById('habitat_p').textContent = translation.habitat;
+  document.getElementById('diet_p').textContent = translation.diet;
+  document.getElementById('solitary_nature_p').textContent = translation.solitary_nature;
+  document.getElementById('survival_threats_p').textContent = translation.survival_threats;
 
   // Apply translations to paragraph elements as needed
   document.getElementById('introduction').querySelector('p').textContent = translation.introduction_p;
