@@ -11,46 +11,43 @@ function updateDateTime() {
         second: 'numeric',
     };
 
-    var currentDateTime;
+    var currentDate;
+    var currentTime;
 
     if (currentLanguage === 'de') {
         // German locale
-        currentDateTime = new Date().toLocaleDateString('de-DE', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('de-DE', optionsTime);
+        currentDate = new Date().toLocaleDateString('de-DE', optionsDate);
+        currentTime = new Date().toLocaleTimeString('de-DE', optionsTime);
     } else if (currentLanguage === 'en') {
         // English locale
-        currentDateTime = new Date().toLocaleDateString('en-US', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('en-US', optionsTime);
+        currentDate = new Date().toLocaleDateString('en-US', optionsDate);
+        currentTime = new Date().toLocaleTimeString('en-US', optionsTime);
     } else if (currentLanguage === 'es') {
         // Spanish locale
-        currentDateTime = new Date().toLocaleDateString('es-ES', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('es-ES', optionsTime);
+        currentDate = new Date().toLocaleDateString('es-ES', optionsDate);
+        currentTime = new Date().toLocaleTimeString('es-ES', optionsTime);
     } else if (currentLanguage === 'fr') {
         // French locale
-        currentDateTime = new Date().toLocaleDateString('fr-FR', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('fr-FR', optionsTime);
+        currentDate = new Date().toLocaleDateString('fr-FR', optionsDate);
+        currentTime = new Date().toLocaleTimeString('fr-FR', optionsTime);
     } else if (currentLanguage === 'ja') {
         // Japanese locale
-        currentDateTime = new Date().toLocaleDateString('ja-JP', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('ja-JP', optionsTime);
+        currentDate = new Date().toLocaleDateString('ja-JP', optionsDate);
+        currentTime = new Date().toLocaleTimeString('ja-JP', optionsTime);
     } else if (currentLanguage === 'ko') {
         // Korean locale
-        currentDateTime = new Date().toLocaleDateString('ko-KR', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('ko-KR', optionsTime);
+        currentDate = new Date().toLocaleDateString('ko-KR', optionsDate);
+        currentTime = new Date().toLocaleTimeString('ko-KR', optionsTime);
     } else {
         // Default to English if the language is not recognized
-        currentDateTime = new Date().toLocaleDateString('en-US', optionsDate) +
-            '<br>' +
-            new Date().toLocaleTimeString('en-US', optionsTime);
+        currentDate = new Date().toLocaleDateString('en-US', optionsDate);
+        currentTime = new Date().toLocaleTimeString('en-US', optionsTime);
     }
 
     currentDateTimeElement.classList.add("current-date-time");
 
-    currentDateTimeElement.innerHTML = currentDateTime;
+    // Create separate span elements for date and time
+    currentDateTimeElement.innerHTML = '<span class="date">' + currentDate + '</span>' +
+        '<br>' +
+        '<span class="time">' + currentTime + '</span>';
 }
